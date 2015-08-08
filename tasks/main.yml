@@ -1,0 +1,11 @@
+---
+
+- name: Install FileZilla via apt
+  apt: name=filezilla
+  sudo: yes
+  when: ansible_pkg_mgr == "apt"
+
+- name: Install FileZilla via yum
+  yum: name=filezilla
+  sudo: yes
+  when: ansible_pkg_mgr == "yum"

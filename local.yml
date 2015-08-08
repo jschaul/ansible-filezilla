@@ -1,0 +1,6 @@
+---
+- name: "filezilla_local.yml"
+  hosts: localhost
+  connection: local
+  roles:
+    - "../ansible-filezilla"
